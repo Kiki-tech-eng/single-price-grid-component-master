@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Karla", serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 100px auto;
+  line-height: 1.5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.header {
+  background-color: white;
+  padding: 20px;
+  padding-right: 60px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.header h4 {
+  margin-bottom: 15px;
+}
+
+.header h5 {
+  margin-bottom: 5px;
+}
+
+.content {
+  background-color: hsl(179, 62%, 43%);
+  padding: 20px;
+  padding-right: 40px;
+  border-bottom-left-radius: 7px;
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.content-one {
+  background-color: hsl(179, 100%, 43%);
+  padding: 20px;
+  padding-right: 60px;
+  border-bottom-right-radius: 7px;
+}
+
+.btn {
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  text-align: center;
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: 7px 5px 17px rgb(123, 122, 122);
+}
+
+h4 {
+  font-weight: bold;
+  color: hsl(179, 62%, 43%);
+}
+
+.paragraph {
+  color: hsl(218, 22%, 67%);
+  margin-bottom: 10px;
+}
+
+h5 {
+  color: hsl(71, 73%, 54%);
+}
+
+span {
+  color: white;
+  font-weight: 700;
+  font-size: 27px;
+  padding-right: 10px;
+}
+
+.price {
+  color: hsl(206, 10%, 86%);
+  margin-bottom: 10px;
+  font-weight: lighter;
+  align-items: center;
+}
+
+.fee {
+  margin-bottom: 20px;
+}
+
+.review {
+  color: hsl(204, 43%, 93%);
+  font-size: small;
+  font-weight: lighter;
+}
+
+.heading {
+  color: white;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.fee {
+  color: hsl(204, 43%, 93%);
+  font-weight: lighter;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    height: unset;
+  }
+  .grid {
+    display: block;
+  }
+  .content {
+    border-radius: 0;
+  }
+  .container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
